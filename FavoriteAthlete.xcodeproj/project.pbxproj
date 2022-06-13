@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		354E66B42857297F0066D2FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354E66B32857297F0066D2FE /* AppDelegate.swift */; };
 		354E66B62857297F0066D2FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354E66B52857297F0066D2FE /* SceneDelegate.swift */; };
-		354E66B82857297F0066D2FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354E66B72857297F0066D2FE /* ViewController.swift */; };
 		354E66BB2857297F0066D2FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 354E66B92857297F0066D2FE /* Main.storyboard */; };
 		354E66BD285729820066D2FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 354E66BC285729820066D2FE /* Assets.xcassets */; };
 		354E66C0285729820066D2FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 354E66BE285729820066D2FE /* LaunchScreen.storyboard */; };
+		354E66C828573A470066D2FE /* AthletesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354E66C728573A470066D2FE /* AthletesTableViewController.swift */; };
+		354E66CC28573C2E0066D2FE /* Athlete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354E66CB28573C2E0066D2FE /* Athlete.swift */; };
+		354E66CE28573D470066D2FE /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354E66CD28573D470066D2FE /* League.swift */; };
+		354E66D028573D7B0066D2FE /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354E66CF28573D7B0066D2FE /* Team.swift */; };
+		354E66D228573E860066D2FE /* AthleteFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354E66D128573E860066D2FE /* AthleteFormViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		354E66B02857297F0066D2FE /* FavoriteAthlete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FavoriteAthlete.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		354E66B32857297F0066D2FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		354E66B52857297F0066D2FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		354E66B72857297F0066D2FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		354E66BA2857297F0066D2FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		354E66BC285729820066D2FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		354E66BF285729820066D2FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		354E66C1285729820066D2FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		354E66C728573A470066D2FE /* AthletesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthletesTableViewController.swift; sourceTree = "<group>"; };
+		354E66CB28573C2E0066D2FE /* Athlete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Athlete.swift; sourceTree = "<group>"; };
+		354E66CD28573D470066D2FE /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
+		354E66CF28573D7B0066D2FE /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		354E66D128573E860066D2FE /* AthleteFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteFormViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,35 @@
 		354E66B22857297F0066D2FE /* FavoriteAthlete */ = {
 			isa = PBXGroup;
 			children = (
+				354E66C928573BFC0066D2FE /* Models */,
+				354E66CA28573C0B0066D2FE /* Controllers */,
 				354E66B32857297F0066D2FE /* AppDelegate.swift */,
 				354E66B52857297F0066D2FE /* SceneDelegate.swift */,
-				354E66B72857297F0066D2FE /* ViewController.swift */,
 				354E66B92857297F0066D2FE /* Main.storyboard */,
 				354E66BC285729820066D2FE /* Assets.xcassets */,
 				354E66BE285729820066D2FE /* LaunchScreen.storyboard */,
 				354E66C1285729820066D2FE /* Info.plist */,
 			);
 			path = FavoriteAthlete;
+			sourceTree = "<group>";
+		};
+		354E66C928573BFC0066D2FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				354E66CB28573C2E0066D2FE /* Athlete.swift */,
+				354E66CD28573D470066D2FE /* League.swift */,
+				354E66CF28573D7B0066D2FE /* Team.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		354E66CA28573C0B0066D2FE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				354E66C728573A470066D2FE /* AthletesTableViewController.swift */,
+				354E66D128573E860066D2FE /* AthleteFormViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +166,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				354E66B82857297F0066D2FE /* ViewController.swift in Sources */,
+				354E66D028573D7B0066D2FE /* Team.swift in Sources */,
 				354E66B42857297F0066D2FE /* AppDelegate.swift in Sources */,
+				354E66C828573A470066D2FE /* AthletesTableViewController.swift in Sources */,
+				354E66D228573E860066D2FE /* AthleteFormViewController.swift in Sources */,
 				354E66B62857297F0066D2FE /* SceneDelegate.swift in Sources */,
+				354E66CE28573D470066D2FE /* League.swift in Sources */,
+				354E66CC28573C2E0066D2FE /* Athlete.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
